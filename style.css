@@ -848,14 +848,139 @@ footer .my-account a:hover{
     text-align: center;
 }
 
+/*Contact Page*/
 
+.contact-content{
+    background-image: url(img/contact.avif);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+}
+
+.contact-content h2{
+    padding-top: 70px;
+    color: #fff;
+}
+
+.contact-content p{
+    color: #fff;
+}
+
+.contact-details{
+    margin: 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-details .details{
+    width: 40%;
+}
+
+.contact-details .details span,
+.form-details form span{
+    font-size: 18px;
+}
+
+.contact-details .details h2,
+.form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+    padding-bottom: 10px
+}
+
+.contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+.contact-details .details li i{
+    font-size: 20px;
+    padding-right: 22px;
+}
+
+.contact-details .details li p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+
+.contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.form-details{
+    margin: 70px 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 2px solid rgb(26, 156, 106);
+    border-radius: 5px;
+}
+
+.form-details form input,
+.form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.form-details form .btn{
+    background-color: rgb(26, 156, 106);
+    font-size: 18px;
+}
+
+.form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;;
+}
+
+.form-details .people div img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.form-details .people div p{
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.form-details .people div p span{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
 
 
 
 @media (max-width:1102px){
 
     /*About Page*/
-    
+
     .intro{
         display: flex;
         flex-direction: column;
@@ -1026,6 +1151,16 @@ footer .my-account a:hover{
         width: 100%;
     }
 
+    /*Contact Page*/
+
+    .form-details{
+        padding: 40px;
+    }
+
+    .form-details form{
+        width: 50%;
+    }
+
 }
 
 @media (max-width: 470px){
@@ -1073,6 +1208,32 @@ footer .my-account a:hover{
 
     .about-content{
        background-position: 55%;
+    }
+
+    /*Contact Page*/
+
+    .contact-details{
+        flex-direction: column;
+    }
+
+    .contact-details .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact-details .map{
+        width: 100%;
+    }
+
+    .form-details{
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+
+    .form-details form{
+        width: 100%;
+        margin-bottom: 30px;
     }
 
 }
