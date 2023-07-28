@@ -14,7 +14,7 @@ if(close){
     })
 }
 
-
+/*Shop Page*/
 
 var MainImg = document.getElementById('main-img');
 var SmallImg = document.getElementsByClassName('small-img');

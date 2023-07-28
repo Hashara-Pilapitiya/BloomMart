@@ -761,6 +761,119 @@ footer .my-account a:hover{
     line-height: 1.5;
 }
 
+/*About Page*/
+
+.about-content{
+    background-image: url(img/about.avif);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+.intro{
+    margin: 60px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.intro img{
+    width: 50%;
+    height: auto;
+}
+
+.intro .intro-content{
+    padding-left: 40px;
+}
+
+.intro .intro-content p{
+    line-height: 2;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.intro .intro-content p span{
+    color: #dd08d2;
+    font-weight: 600;
+}
+
+.miss{
+    margin: 0 100px 60px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.miss .mission,
+.miss .vision{
+    border: 5px solid seagreen;
+    border-radius: 10px;
+    padding-right:30px;
+    width: 48%
+}
+
+.miss .mission .mission-content h2,
+.miss .vision .vision-content h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.miss .mission .mission-content h4,
+.miss .vision .vision-content h4{
+    padding-left: 30px;
+    padding-bottom: 20px;
+    color: #465b52;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.banner1{
+    background-image: url(img/about2.avif);
+    background-size: cover;
+    height: 20vh;
+    margin-bottom: 50px;
+}
+
+.banner1 p{
+    padding: 40px 60px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width:1102px){
+
+    /*About Page*/
+    
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .intro .intro-content{
+        padding-left: 0px;
+    }
+
+    .banner1{
+        height: 30vh;
+    }
+}
 
 @media (max-width:799px){
     .section-p1{
@@ -874,9 +987,48 @@ footer .my-account a:hover{
     .deatials .pro-deatials{
         width: 100%;
     }
+
+    /*About Page*/
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .intro .intro-content{
+        padding-left: 0px;
+    }
+
+    .banner1{
+        height: 35vh;
+    }
+
+    .banner1 p{
+        font-size: 16px;
+    }
+
+    .miss{
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .miss .mission{
+        width: 100%;
+        margin-bottom: 30px 
+    }
+
+    .miss .vision{
+        width: 100%;
+    }
+
 }
 
-@media (max-width: 477px){
+@media (max-width: 470px){
     .section-p1{
         padding: 20px;
     }
@@ -919,8 +1071,8 @@ footer .my-account a:hover{
         width: 100%;
     }
 
-    
+    .about-content{
+       background-position: 55%;
+    }
 
-    /*Single Flower*/
-    
 }
