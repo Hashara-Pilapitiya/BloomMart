@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="cart.js"></script>
    </head>
 
    <body>
@@ -18,11 +19,11 @@
 
         <div>
             <ul class="navbar" id="navbar">
-                <li><a  href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li class="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <li><a href="sign-in.html">Sign In</a></li>
                 <li><a href="join-now.html">Join Now</a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
@@ -35,63 +36,82 @@
         </div>
     </section>
 
-    <section class="deatials" id="deatials">
-        <div class="pro-image">
-            <img src="assets/img/products/lavender.avif" width="100%" id="main-img">
+    <section class="cart-content">
+        <h2>#Cart</h2>
+        <p>Your beautifully curated floral selections await in your shopping cart!</p>
+    </section>
 
-            <div class="small-img-group">
-                <div class="small-img-col">
-                    <img src="assets/img/products/lavender.avif" width="100%" class="small-img">
-                    <p>English Lavender</p>
-                </div>
+    <section class="cart" id="cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
 
-                <div class="small-img-col">
-                    <img src="assets/img/products/french-lavender.avif" width="100%" class="small-img">
-                    <p>French Lavender</p>
-                </div>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="assets/img/products/rose.avif"></td>
+                    <td>Rose</td>
+                    <td>$ 2.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$ 2.00</td>
+                </tr>
 
-                <div class="small-img-col">
-                    <img src="assets/img/products/lavandin-lavender.avif" width="100%" class="small-img">
-                    <p>Lavandin</p>
-                </div>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="assets/img/products/zinnia.avif"></td>
+                    <td>Zinnia</td>
+                    <td>$ 3.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$ 3.00</td>
+                </tr>
 
-                <div class="small-img-col">
-                    <img src="assets/img/products/hidcote-lavender.avif" width="100%" class="small-img">
-                    <p>Hidcote Lavender</p>
-                </div>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="assets/img/products/lily.avif"></td>
+                    <td>Lily</td>
+                    <td>$ 3.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$ 3.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="cart-add" id="cart-add">
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon...">
+                <button class="btn">Apply</button>
             </div>
         </div>
 
-        <div class="pro-deatials">
-            <h4>Home / Lavender</h4>
-            <h2>$ 6.00</h2>
-            <select>
-                <option>Select Way</option>
-                <option>Bouqute</option>
-                <option>Separately</option>
-            </select>
-            <input type="number" value="1">
-            <button class="btn">
-                <a href="cart.html">Add To Cart</a>
-            </button>
-            <h4>Welcome to BloomMart</h4>
-            <p>The enchanting world of lavender unfolds in all its splendor. Our carefully cultivated lavender collection boasts an array of varieties, each captivating with its unique charm and fragrance.
-                At BloomMart, we celebrate the beauty and versatility of lavender, nurturing each plant to ensure that its essence graces your spaces and occasions. Whether crafting delightful products, enhancing your garden, or simply savoring the calming aroma, our lavender varieties are sure to inspire moments of tranquility and admiration for their timeless charm.  
-            </p>
-        </div>
-    </section>
+        <div class="sub-total">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 300.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 300.00</strong></td>
+                </tr>
+            </table>
 
-    <section class="signup" id="signup">
-        <div class="newstext">
-            <h4>Express Your Emotions with Exquisite Flowers - Shop Now!!</h4>
-            <p>Get E-mail updates about our latest shop and <span>Special offers.</span></p>
-        </div>
-
-        <div class="form">
-            <input type="text" placeholder="Enter Your Email...">
-            <button class="btn">
-                <a href="join-now.html">Sign Up</a>
-            </button>
+            <button class="btn">Proceed to Checkout</button>
         </div>
     </section>
 
@@ -156,7 +176,6 @@
         <p>Copyrights 2023 All rights reserved.</p>
     </div>
 
-    <script src="script.js"></script>
    </body>
 
 </html>

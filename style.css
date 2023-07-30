@@ -127,7 +127,7 @@ body{
 }
 
 .home-content{
-    background-image: url("img/home.avif");
+    background-image: url("assets/img/home.avif");
     background-size: cover;
     height: 90vh;
     width: 100%;
@@ -309,8 +309,7 @@ body{
     font-weight: 500;
     color:  rgb(11, 157, 45);
     position: absolute;
-    bottom: 20px;
-    right: 10px;
+    bottom: -20px;
 }
 
 .banner{
@@ -320,7 +319,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(img/banner/img1.avif);
+    background-image: url(assets/img/banner/img1.avif);
     background-size: cover;
     width: 100%;
     height: 40vh;
@@ -371,7 +370,7 @@ body{
     align-items: center;
     text-align: center;
     text-transform: capitalize;
-    background-image: url(img/banner/img2.avif);
+    background-image: url(assets/img/banner/img2.avif);
     background-size: cover;
     min-width: 660px;
     height: 50vh;
@@ -399,7 +398,9 @@ body{
    margin-top: 10px 0;
 }
 
-.sm-banner .banner-box:hover .btn{
+.sm-banner .banner-box:hover .btn,
+.cart-add .coupon .btn:hover,
+.cart-add .sub-total .btn:hover{
     background: rgb(74, 208, 74);
     letter-spacing: 0.1rem;
 }
@@ -410,7 +411,7 @@ body{
 }
 
 .sm-banner #b2{
-    background-image: url(img/banner/img3.avif);
+    background-image: url(assets/img/banner/img3.avif);
 }
 
 .sm-banner1{
@@ -428,7 +429,7 @@ body{
     align-items: flex-start;
     text-align: center;
     text-transform: capitalize;
-    background-image: url(img/banner/img4.avif);
+    background-image: url(assets/img/banner/img4.avif);
     background-size: cover;
     min-width: 30%;
     height: 30vh;
@@ -437,11 +438,11 @@ body{
 }
 
 .sm-banner1 #banner2{
-    background-image: url(img/banner/img5.avif);
+    background-image: url(assets/img/banner/img5.avif);
 }
 
 .sm-banner1 #banner3{
-    background-image: url(img/banner/img66.avif);
+    background-image: url(assets/img/banner/img66.avif);
 }
 
 .sm-banner1 #banner1 h2{
@@ -646,7 +647,7 @@ footer .my-account a:hover{
 
 /*Shop Page*/
 .shop-content{
-    background-image: url(img/shop.avif);
+    background-image: url(assets/img/shop.avif);
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -764,7 +765,7 @@ footer .my-account a:hover{
 /*About Page*/
 
 .about-content{
-    background-image: url(img/about.avif);
+    background-image: url(assets/img/about.avif);
     background-size: cover;
     width: 100%;
     height: 40vh;
@@ -833,7 +834,7 @@ footer .my-account a:hover{
 }
 
 .banner1{
-    background-image: url(img/about2.avif);
+    background-image: url(assets/img/about2.avif);
     background-size: cover;
     height: 20vh;
     margin-bottom: 50px;
@@ -851,7 +852,7 @@ footer .my-account a:hover{
 /*Contact Page*/
 
 .contact-content{
-    background-image: url(img/contact.avif);
+    background-image: url(assets/img/contact.avif);
     background-size: cover;
     width: 100%;
     height: 40vh;
@@ -974,6 +975,161 @@ footer .my-account a:hover{
     font-weight: 600;
     color: #000;
 }
+
+/*Cart Page*/
+
+.cart{
+    overflow: auto;
+}
+
+.cart-content{
+    background-image: url(assets/img/cart.avif);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+}
+
+.cart-content h2{
+    padding-top: 70px;
+    color: #fff;
+}
+
+.cart-content p{
+    color: #fff;
+}
+
+.cart{
+    margin: 60px 100px;
+}
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+.cart table img{
+    width: 100px;
+}
+
+.cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+.cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+.cart table td:nth-child(3),
+.cart table td:nth-child(4),
+.cart table td:nth-child(5),
+.cart table td:nth-child(6){
+    width: 100px;
+    text-align: center;
+}
+
+.cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+.cart table thead{
+    border: 2px solid  rgb(26, 156, 106);
+    border-left: none;
+    border-right: none;
+}
+
+.cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 18px 0;
+}
+
+.cart table tbody tr td{
+    padding-top: 15px;
+}
+
+.cart table tbody tr td i{
+    font-size: 18px;
+    color: rgb(26, 156, 106);
+}
+
+.cart table tbody td{
+    font-size: 16px;
+}
+
+.cart-add{
+    margin: 60px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cart-add .coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.cart-add .coupon h3{
+    padding-bottom: 15px;
+}
+
+.cart-add .coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 2px solid rgb(26, 156, 106);
+    border-radius: 5px;
+}
+
+.cart-add .coupon .btn,
+.cart-add .sub-total .btn{
+    background-color: rgb(26, 156, 106);
+    padding: 10px 20px;
+}
+
+.cart-add .sub-total{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 2px solid rgb(26, 156, 106);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.cart-add .sub-total h3{
+    padding-bottom: 15px;
+}
+
+.cart-add .sub-total table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cart-add .sub-total table td{
+    width: 50%;
+    border: 3px solid #e2e9e1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1234,6 +1390,21 @@ footer .my-account a:hover{
     .form-details form{
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    /*Cart Page*/
+
+    .cart-add{
+        flex-direction: column;
+    }
+
+    .cart-add .coupon{
+        width: 100%;
+    }
+
+    .cart-add .sub-total{
+        width: 100%;
+        padding: 20px;
     }
 
 }
