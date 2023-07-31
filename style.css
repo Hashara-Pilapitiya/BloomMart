@@ -535,6 +535,7 @@ body{
     outline: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    background: #fff;
 }
 
 .signup .form .btn{
@@ -940,8 +941,9 @@ footer .my-account a:hover{
     padding: 12px 15px;
     outline: none;
     margin-bottom: 20px;
-    border: 2px solid green;
+    border: 2px solid rgb(26, 156, 106);
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .form-details form .btn{
